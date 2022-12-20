@@ -618,13 +618,13 @@ if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
   nmap <Leader>ySS <Plug>YSsurround
   xmap <Leader>S   <Plug>VSurround
   xmap <Leader>gS  <Plug>VgSurround
-  if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
-    if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
-      imap    <Leader><C-S> <Plug>Isurround
-    endif
-    imap      <Leader><C-G>s <Plug>Isurround
-    imap      <Leader><C-G>S <Plug>ISurround
-  endif
+  " if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
+  "   if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
+  "     imap    <Leader><C-S> <Plug>Isurround
+  "   endif
+  "   imap      <Leader><C-G>s <Plug>Isurround
+  "   imap      <Leader><C-G>S <Plug>ISurround
+  " endif
 endif
 
 " vim:set ft=vim sw=2 sts=2 et:
