@@ -608,22 +608,22 @@ inoremap <silent> <Plug>Isurround  <C-R>=<SID>insert()<CR>
 inoremap <silent> <Plug>ISurround  <C-R>=<SID>insert(1)<CR>
 
 if !exists("g:surround_no_mappings") || ! g:surround_no_mappings
-  nmap ds  <Plug>Dsurround
-  nmap cs  <Plug>Csurround
-  nmap cS  <Plug>CSurround
-  nmap ys  <Plug>Ysurround
-  nmap yS  <Plug>YSurround
-  nmap yss <Plug>Yssurround
-  nmap ySs <Plug>YSsurround
-  nmap ySS <Plug>YSsurround
-  xmap S   <Plug>VSurround
-  xmap gS  <Plug>VgSurround
+  nmap <Leader>ds  <Plug>Dsurround
+  nmap <Leader>cs  <Plug>Csurround
+  nmap <Leader>cS  <Plug>CSurround
+  nmap <Leader>ys  <Plug>Ysurround
+  nmap <Leader>yS  <Plug>YSurround
+  nmap <Leader>yss <Plug>Yssurround
+  nmap <Leader>ySs <Plug>YSsurround
+  nmap <Leader>ySS <Plug>YSsurround
+  xmap <Leader>S   <Plug>VSurround
+  xmap <Leader>gS  <Plug>VgSurround
   if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
     if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
-      imap    <C-S> <Plug>Isurround
+      imap    <Leader><C-S> <Plug>Isurround
     endif
-    imap      <C-G>s <Plug>Isurround
-    imap      <C-G>S <Plug>ISurround
+    imap      <Leader><C-G>s <Plug>Isurround
+    imap      <Leader><C-G>S <Plug>ISurround
   endif
 endif
 
